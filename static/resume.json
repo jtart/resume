@@ -1,0 +1,48 @@
+{
+	"data": {
+		"introduction": {
+			"name": "Jordan Tart",
+			"description": "I am a full-stack web developer who currently works for BBC News; one of the most-trafficked websites in the world. I am adept at building highly-available and highly-performant cloud solutions, and I am a keen enthusiast for building an open and accessible web for everyone."
+		},
+		"experience": [
+			{
+				"name": "BBC News",
+				"url": "http://www.bbc.com/news",
+				"role": "Software Engineer",
+				"description": "Software Engineer working in an agile, focused, and multi-disciplinary team that builds highly available and distributed web systems serving BBC News. I currently work on a greenfield cloud project to build an Articles system that is to be used across the BBC's complete web portfolio. Prior to this, I worked in World Service, where the focus was on developing performant and accessible systems to provide news content to millions of users around the world, paticularly to those that have extremely limited bandwidth, internet access, or device capability.",
+				"startDate": "2016-05-03"
+			},
+			{
+				"name": "CGI Group",
+				"url": "https://www.cgi-group.co.uk/utilities/smart-metering",
+				"role": "Graduate Developer",
+				"description": "Graduate Developer embedded into the test team on a large Government project for the rollout of smart utilities and meters. The role worked closely with testers and developers to develop automated internal test frameworks. I had primary responsibility over web and performance frameworks, and built web interfaces for all of the test frameworks that we built.",
+				"startDate": "2014-10-16",
+				"endDate": "2016-04-29"
+			}
+		],
+		"skills": {
+			"Languages": [
+				"JavaScript",
+				"Ruby"
+			],
+			"Frameworks": [
+				"React",
+				"Express",
+				"Next.js"
+			],
+			"Workflow": [
+				"Webpack 3",
+				"Docker",
+				"Git",
+				"Jenkins - CI and CD (deployment)"
+			],
+			"DevOps": [
+				"AWS",
+				"NoSQL",
+				"Nginx",
+				"Apache"
+			]
+		}
+	}
+}

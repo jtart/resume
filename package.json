@@ -1,0 +1,31 @@
+{
+  "name": "jordan-tart",
+  "version": "1.0.0",
+  "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.11.4",
+    "isomorphic-unfetch": "^2.0.0",
+    "lru-cache": "^4.1.1",
+    "moment": "^2.20.1",
+    "next": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "spdy": "^3.4.7"
+  },
+  "scripts": {
+    "dev": "next",
+    "start": "NODE_ENV=production node server.js",
+    "deploy": "yarn run remove && now --name=jordan-tart -p",
+    "build": "next build && node generate-sw.js",
+    "report": "yarn build --report && cat .next/stats.txt",
+    "remove": "now rm jordan-tart -y"
+  },
+  "devDependencies": {
+    "load-json-file": "^4.0.0",
+    "webpack-bundle-size-analyzer": "^2.7.0",
+    "workbox-build": "^2.1.2",
+    "workbox-webpack-plugin": "^2.1.2"
+  }
+}

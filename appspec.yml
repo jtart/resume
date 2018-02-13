@@ -1,25 +1,23 @@
 version: 0.0
 os: linux
 files:
-- source: /
- destination: /home/ubuntu/app
-
+  - source: /
+    destination: /home/ubuntu/app
 permissions:
-- object: /
-   pattern: "**"
-   owner: ubuntu
-   group: ubuntu
-
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
 hooks:
   Install:
-   - location: bin/deps_install
-     timeout: 1200
-     runas: ubuntu
+    - location: bin/deps_install
+      timeout: 1200
+      runas: ubuntu
   ApplicationStart:
-   - location: bin/app_start
-     timeout: 60
-     runas: ubuntu
+    - location: bin/app_start
+      timeout: 60
+      runas: ubuntu
   AfterInstall:
-  - location: deploy/server_restart
-    timeout: 300
-    runas: ubuntu
+    - location: bin/server_restart
+      timeout: 60
+      runas: ubuntu

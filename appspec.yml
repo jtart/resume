@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+   destination: /home/ubuntu/app
+
+permissions:
+  - object: /
+     pattern: "**"
+     owner: ubuntu
+     group: ubuntu
+
+hooks:
+  Install:
+   - location: bin/deps_install
+     timeout: 1200
+     runas: ubuntu
+
+  ApplicationStart:
+     - location: bin/app_start
+       timeout: 60
+       runas: ubuntu

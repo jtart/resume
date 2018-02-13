@@ -2,14 +2,14 @@
 	"data": {
 		"introduction": {
 			"name": "Jordan Tart",
-			"description": "I am a full-stack web developer who currently works for BBC News; one of the most-trafficked websites in the world. I am adept at building highly-available and highly-performant cloud solutions, and I am a keen enthusiast for building an open and accessible web for everyone."
+			"description": "I am a full-stack web developer who currently works for BBC News; one of the most-trafficked websites in the world. I am adept at building highly-available and highly-performant cloud application, and I am a keen enthusiast for building an open and accessible web for everyone."
 		},
 		"experience": [
 			{
 				"name": "BBC News",
 				"url": "http://www.bbc.com/news",
 				"role": "Software Engineer",
-				"description": "Software Engineer working in an agile, focused, and multi-disciplinary team that builds highly available and distributed web systems serving BBC News. I currently work on a greenfield cloud project to build an Articles system that is to be used across the BBC's complete web portfolio. Prior to this, I worked in World Service, where the focus was on developing performant and accessible systems to provide news content to millions of users around the world, paticularly to those that have extremely limited bandwidth, internet access, or device capability.",
+				"description": "Software Engineer working in an agile, focused, and multi-disciplinary team that builds highly available and distributed web systems serving BBC News. I currently work on a greenfield cloud project to build an Articles system that is to be used across the BBC's complete web portfolio. Prior to this, I worked in World Service, where the focus was on developing performant and accessible systems. These systems provided news content to millions of users around the world, paticularly to those that have extremely limited bandwidth, internet access, or device capability.",
 				"startDate": "2016-05-03"
 			},
 			{

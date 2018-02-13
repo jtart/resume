@@ -22,7 +22,7 @@ class Header extends React.Component {
     }
 
     this.mastheadTitleStyles = {
-      fontSize: '60px'
+      fontSize: '72px'
     }
   }
 
@@ -38,7 +38,7 @@ class Header extends React.Component {
     return (
       <StyledHeader>
         <StyledMasthead>
-          <StyledMastheadTitle><Link href='/'><a>JRDN</a></Link></StyledMastheadTitle>
+          <StyledMastheadTitle><Link href='/'><a>JT</a></Link></StyledMastheadTitle>
         </StyledMasthead>
       </StyledHeader>
     )

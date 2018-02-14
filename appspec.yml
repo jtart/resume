@@ -10,14 +10,14 @@ permissions:
     group: ubuntu
 hooks:
   Install:
-    - location: bin/deps_install
+    - location: deploy/deps_install
       timeout: 1200
       runas: ubuntu
   ApplicationStart:
-    - location: bin/app_start
+    - location: deploy/app_start
       timeout: 60
       runas: ubuntu
   AfterInstall:
-    - location: bin/server_restart
+    - location: deploy/server_restart
       timeout: 60
       runas: ubuntu

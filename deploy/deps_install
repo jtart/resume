@@ -1,0 +1,12 @@
+#!/bin/bash
+
+yum update -y
+curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
+yum install -y nodejs
+
+source /home/ubunutu/.bash_profile
+
+npm install --production
+npm install pm2 -g
+
+source /home/ubunutu/.bash_profile

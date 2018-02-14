@@ -1,22 +1,21 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html
-permissions:
-  - object: /
-    pattern: "**"
-    owner: root
+    - source: /
+      destination: /app/jordan-tart
 hooks:
+#  ApplicationStop:
+#    - location: deployment/index.js
+#      timeout: 180
+  BeforeInstall:
+    - location: deployment/index.js
+      timeout: 180
   AfterInstall:
-    - location: deploy/deps_install
-      timeout: 1200
-      runas: root
+    - location: deployment/index.js
+      timeout: 180
   ApplicationStart:
-    - location: deploy/app_start
-      timeout: 60
-      runas: root
-  AfterInstall:
-    - location: deploy/server_restart
-      timeout: 60
-      runas: root
+    - location: deployment/index.js
+      timeout: 180
+  ValidateService:
+    - location: deployment/index.js
+      timeout: 180

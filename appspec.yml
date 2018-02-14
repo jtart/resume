@@ -11,6 +11,10 @@ permissions:
       - directory
       - file
 hooks:
+  ApplicationStop:
+    - location: deploy/app_stop.sh
+      timeout: 300
+      runas: root
   BeforeInstall:
     - location: deploy/install.sh
       timeout: 300

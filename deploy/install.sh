@@ -9,3 +9,6 @@ apt-get install nodejs -y
 
 npm install -g --no-optional pm2
 pm2 update
+
+cd /home/ubuntu/jordan-tart
+npm run build

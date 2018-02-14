@@ -5,17 +5,17 @@ files:
       destination: /app/jordan-tart
 hooks:
 #  ApplicationStop:
-#    - location: deployment/index.js
+#    - location: deploy/index.js
 #      timeout: 180
   BeforeInstall:
-    - location: deployment/index.js
+    - location: deploy/index.js
       timeout: 180
   AfterInstall:
-    - location: deployment/index.js
+    - location: deploy/index.js
       timeout: 180
   ApplicationStart:
-    - location: deployment/index.js
+    - location: deploy/index.js
       timeout: 180
   ValidateService:
-    - location: deployment/index.js
+    - location: deploy/index.js
       timeout: 180

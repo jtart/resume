@@ -14,6 +14,15 @@ const styles = {
   textAlign: 'center'
 }
 
+const contactStyles = {
+  'padding': '0',
+  'margin': '0',
+  '& li': {
+    display: 'inline-block',
+    padding: '0 12px'
+  }
+}
+
 class Footer extends React.Component {
   shouldComponentUpdate() {
     return false;
@@ -21,10 +30,16 @@ class Footer extends React.Component {
 
   render() {
     const StyledFooter = glamorous.footer(styles)
+    const StyledContact = glamorous.ul(contactStyles)
 
     return (
       <StyledFooter>
-        <p className={styles.footerInfo}>This magic web thing was made with Universal React. Check out da <a href='https://github.com/jtart/resume'>source code</a>!</p>
+        <p>This magic web thing was made with Universal React. Check out da <a href='https://github.com/jtart/resume'>source code</a>!</p>
+        <p>Wanna chat?</p>
+        <StyledContact>
+          <li><a href="mailto:jordan.tart3@gmail.com">Mail</a></li>
+          <li><a href="https://linkedin.com/in/jordan-tart-8b517950/">Linkedin</a></li>
+        </StyledContact>
       </StyledFooter>
     )
   }

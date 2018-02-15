@@ -15,6 +15,7 @@ function bundles(app) {
       if (files) {
         const root = `/_next/${app.buildId}/page`
         app.precaches = app.precaches.concat(files
+          .filter(file => file !== 'index.js' || file !== 'resume.js')
           .map(file => {
             return path.join(root, file)
           })

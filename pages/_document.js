@@ -25,6 +25,7 @@ export default class MyDocument extends Document {
           <meta key='viewport' name='viewport' content='initial-scale=1.0, width=device-width'/>
           <meta name="theme-color" content="#f26a6b"/>
           <meta name="description" content="Website and Resume/CV of Jordan Tart. A full-stack Web Developer working for BBC News."/>
+          <link rel="shortcut icon" href="/static/img/icon-72x72.png"/>
           <link rel="manifest" href="/static/manifest.json"/>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }}/>
         </Head>

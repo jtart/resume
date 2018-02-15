@@ -2,5 +2,5 @@
 set -e
 
 cd /home/ubuntu/jordan-tart
-npm install
-npm run build
+yarn install
+yarn build

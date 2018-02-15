@@ -7,5 +7,7 @@ apt-get install python-software-properties -y
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 apt-get install nodejs -y
 
-npm install -g --no-optional pm2
+npm install -g yarn
+
+yarn global add --ignore-optional pm2
 pm2 update

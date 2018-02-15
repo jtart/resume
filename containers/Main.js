@@ -22,10 +22,7 @@ const Main = ({ children }) => {
 
   css.global('a', {
     textDecoration: 'none',
-    color: '#EB1313',
-    '&:hover': {
-      textDecoration: 'underline'
-    }
+    color: '#EB1313'
   })
 
   const styles = {

@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "next",
     "start": "NODE_ENV=production node server.js",
-    "deploy": "yarn run remove && now --name=jordan-tart -p",
+    "deploy:test": "yarn run remove && now --name=jordan-tart -p",
     "build": "next build && node generate-sw.js",
     "remove": "now rm jordan-tart -y"
   }

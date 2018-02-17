@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "next",
+    "dev:server": "yarn build && yarn start",
     "start": "NODE_ENV=production node server.js",
     "deploy:test": "yarn run remove && now --name=jordan-tart -p",
     "build": "next build && node generate-sw.js",

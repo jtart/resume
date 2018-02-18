@@ -2,8 +2,9 @@
   "name": "headless-wp-starter",
   "version": "1.0.0",
   "scripts": {
-    "preinstall": "chmod +x install.sh && ./install.sh",
-    "postinstall": "robo wordpress:setup",
+    "install:deps": "chmod +x install.sh && ./install.sh",
+    "install:wordpress" "robo wordpress:setup"
+    "build": "yarn install:deps && yarn install:wordpress",
     "start": "wp server"
   }
 }

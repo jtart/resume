@@ -7,13 +7,13 @@ import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
 import { Footer } from '../components/Footer'
 
-const Layout = ({ children, title = null }) => (
+const Layout = ({ children, navData, title = null }) => (
   <Container>
     <Head>
       <title key='title'>{ title ? `${title} - JRDN` : `JRDN` }</title>
     </Head>
     <Header key='header' />
-    <Nav key='nav' />
+    <Nav key='nav' data={navData} />
     <Main key={title}>
       { children }
     </Main>

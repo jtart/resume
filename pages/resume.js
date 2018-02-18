@@ -1,12 +1,15 @@
 import { Layout } from '../containers/Layout'
-import { Resume } from '../components/Resume'
+import { Resume as ResumeComp } from '../components/Resume'
+import { withPageData } from "../components/PageWrapper"
 import { withData } from '../components/Resume/hoc'
 
-export default () => {
-  const ConnectedResume = withData(Resume)
+const Resume = props => {
+  const ConnectedResume = withData(ResumeComp)
   return(
-    <Layout title='Resume'>
+    <Layout title='Resume' navData={props.navData}>
       <ConnectedResume />
     </Layout>
   )
 }
+
+export default withPageData(Resume)

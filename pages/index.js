@@ -1,8 +1,11 @@
 import { Layout } from '../containers/Layout'
-import { Index } from '../components/Index'
+import { Index as IndexComp } from '../components/Index'
+import { withPageData } from "../components/PageWrapper"
 
-export default () => (
-  <Layout title='Home'>
-    <Index key='index' />
+const Index = props => (
+  <Layout title='Home' navData={props.navData}>
+    <IndexComp key='index' />
   </Layout>
 )
+
+export default withPageData(Index)

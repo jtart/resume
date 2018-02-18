@@ -1,0 +1,11 @@
+command:
+  wordpress:
+    setup:
+      options:
+        wp-user: admin
+        wp-pw: admin
+        wp-theme-dir: main
+        wp-theme-name: WP main
+        wp-email: admin@website.com
+        wp-db-name: website
+        wp-description: Headless Wordpress!
